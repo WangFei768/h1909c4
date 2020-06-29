@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="./js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+
+<input type="checkbox" v-model="hobby" value="吃鸡" />吃鸡<br/>
+<input type="checkbox" v-model="hobby" value="王者荣耀" />王者荣耀<br/>
+<input type="checkbox" v-model="hobby" value="LOL" />LOL<br/>
+</div>
+
+<script type="text/javascript">
+
+//实例化VUE对象
+var app = new Vue({
+	el:"#app",
+	data:{
+		hobby:[]
+	}
+});
+
+
+</script>
+</body>
+</html>
