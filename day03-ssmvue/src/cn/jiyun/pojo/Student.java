@@ -2,14 +2,18 @@ package cn.jiyun.pojo;
 
 import java.util.Date;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 public class Student {
 private Integer sid;
 private String sname;
 private String sex;
 private String age;
+@DateTimeFormat(pattern="yyyy-MM-dd")
 private Date birthday;
 private String img;
 private Integer mid;
+
 public Integer getSid() {
 	return sid;
 }
